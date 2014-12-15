@@ -1,0 +1,55 @@
+ACTIVITY 2 LOG
+
+When there are multiple keywords found in the statement, the response goes to the "responding if statement" that has a higher level of hierarchy. To prioritize, move the more important responses to the top of the hierarchy.
+
+
+Question 1)
+	What happens when a keyword is included in another word?
+	The response will be for that keyword, as it is indeed found in the string after index -1. They are completely out of context. "I know the world is a happy place" will result in the response "Why so negative." That's not right. That is the problem. There should be a space or something.
+
+
+
+ACTIVITY 3 LOG
+
+indexOf returns -1 if char does not occur
+
+
+TRACING findKeyword("She's my sister", "sister", 0);
+
+ITERATION		psn		before		after
+----------------------------------------------------------------
+1			 9		" "		""
+
+
+
+TRACING findKeyword("Brother Tom is helpful", "brother", 0);
+
+ITERATION		psn		before		after
+----------------------------------------------------------------
+1			 0		""		" "
+
+
+
+TRACING findKeyword("I can't catch wild cats.", "cat", 0);
+
+ITERATION		psn		before		after
+----------------------------------------------------------------
+1			 8		" "		"c"
+2			 19		" "		"s"
+
+
+
+TRACING findKeyword("I know nothing about snow plows.", "no", 0);
+
+ITERATION		psn		before		after
+----------------------------------------------------------------
+1			 4		"k"		"w"
+2			 7		" "		"t"
+3			 22		"s"		"w"
+
+
+THAT'S NOT A QUESTION
+
+
+ACTIVITY 4 LOG
+Contractions are bad. Responds "Why do you 'll tell me?"
